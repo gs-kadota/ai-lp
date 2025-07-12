@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIプログラミング学習コミュニティ</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        .container {
+            max-width: 960px;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+            background: #fff;
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #2c3e50;
+        }
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            border: 4px solid #fff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+        .hero h2 {
+            font-size: 2.8rem;
+            margin-top: 0;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #f6ad55;
+            color: #fff;
+            padding: 15px 35px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .cta-button:hover {
+            background-color: #f59e42;
+            transform: translateY(-3px);
+        }
+        .final-cta .cta-button {
+            background: #2ecc71;
+        }
+        .final-cta .cta-button:hover {
+            background: #27ae60;
+        }
+        .features, .target, .how-to, .testimonials {
+            background: #fff;
+            margin-top: 2rem;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        h3 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #34495e;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+        .feature-item, .target-item, .step-item, .testimonial-item {
+            padding: 1.5rem;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+        }
+        .feature-item i, .step-item i {
+            font-size: 3rem;
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+        .testimonial-item {
+            font-style: italic;
+        }
+        .testimonial-item footer {
+            margin-top: 1rem;
+            font-style: normal;
+            font-weight: bold;
+            text-align: center;
+        }
+        .final-cta {
+            text-align: center;
+            padding: 4rem 0;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+            background: #2c3e50;
+            color: #fff;
+        }
+    </style>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <img src="images/digicon.png" alt="プロフィール画像" class="profile-pic">
+            <h1>AI-Driven Developers</h1>
+            <p>未来を創るAIプログラミング学習コミュニティ</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>AI開発の最前線へ、仲間と共に。</h2>
+            <p>最新技術を学び、実践的なスキルを身につけ、AI時代のキャリアを切り拓こう。</p>
+            <a href="https://www.yahoo.co.jp" class="cta-button">今すぐDiscordに参加する</a>
+        </section>
+
+        <section class="features">
+            <h3>このコミュニティで得られること</h3>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-rocket"></i>
+                    <h4>最先端の知識</h4>
+                    <p>論文や最新ツールの情報を共有し、常に業界のトップを走り続けられます。</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-users"></i>
+                    <h4>頼れる仲間</h4>
+                    <p>同じ目標を持つ仲間と交流し、モチベーションを高め合いながら学習できます。</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h4>限定イベント</h4>
+                    <p>専門家を招いた勉強会や、メンバー同士のプロジェクト開発イベントを定期開催します。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="target">
+            <h3>こんな方におすすめ</h3>
+            <div class="features-grid">
+                <div class="target-item">AIプログラミングに挑戦したい学生</div>
+                <div class="target-item">スキルアップして市場価値を高めたいエンジニア</div>
+                <div class="target-item">独学に限界を感じている初学者</div>
+            </div>
+        </section>
+        
+        <section class="testimonials">
+            <h3>参加者の声</h3>
+            <div class="features-grid">
+                <div class="testimonial-item">
+                    <p>"一人では挫折しがちな最新論文の読み解きも、仲間と一緒なら楽しく続けられます。知見が格段に広がりました。"</p>
+                    <footer>- Webエンジニア / 30代</footer>
+                </div>
+                <div class="testimonial-item">
+                    <p>"学生ですが、現場で活躍する社会人の方々と話せるのが刺激的です。キャリアを考える上で非常に参考になります。"</p>
+                    <footer>- 学生 / 20代</footer>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-to">
+            <h3>参加は簡単3ステップ</h3>
+            <div class="features-grid">
+                <div class="step-item">
+                    <i class="fab fa-discord"></i>
+                    <h4>1. ボタンをクリック</h4>
+                    <p>下のDiscord参加ボタンを押して、招待ページへ。</p>
+                </div>
+                <div class="step-item">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <h4>2. サーバーに参加</h4>
+                    <p>簡単な認証を済ませて、コミュニティサーバーへ参加します。</p>
+                </div>
+                <div class="step-item">
+                    <i class="fas fa-comments"></i>
+                    <h4>3. 自己紹介</h4>
+                    <p>まずは自己紹介チャンネルで、あなたのことを教えてください！</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="final-cta">
+            <h3>さあ、あなたもAI開発の旅へ。</h3>
+            <a href="https://www.yahoo.co.jp" class="cta-button">無料でコミュニティに参加する</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 AI-Driven Developers Community. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
